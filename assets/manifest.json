@@ -1,0 +1,21 @@
+{
+    "name": "WebSafe-Alert",
+    "short_name": "WSA",
+    "description": "Améliorez la sécurité en ligne avec WebSafe-Alert.",
+    "icons": [
+        {
+            "src": "/assets/icons/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00010d",
+    "theme_color": "#00010e"
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de WSA">
+    <meta name="keywords" content="cybersécurité, informatique, formation, gratuit, projets, github, français">
+    <meta name="author" content="WSA - Org">
+    <meta name="robots" content="index, follow">
+
+    <meta name="google-site-verification" content="8rjo-68xoxER8H5AzEuEe1hJYJcJvUCXsk5EvV8NW5E" />
+
+    <title>WebSafeAlert</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="theme-color" content="#00010e">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.webp" alt="WebSafeAlert Logo" id="logo">
+            </div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+                <ul id="nav-links">
+                    <li><a href="#">Infos</a></li>
+                    <li><a href="/course/">Cours</a></li>
+                    <li><a href="/tools/">Outils</a></li>
+                    <li><a href="#dev">Développeur</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="developer-doc">
+                    <h2>Une Plateforme pour un Internet plus Sécurisé</h2>
+                    <p><strong>WebSafeAlert</strong> est une initiative communautaire dédiée à renforcer la sécurité en ligne. Notre mission est de protéger les utilisateurs contre les dangers potentiels du web grâce à des outils et des formations sur les bonnes pratiques de sécurité en ligne.</p>
+                    <p><i><b>"Votre sécurité en ligne, notre priorité. 🛡️"</b></i></p>
+                    
+        </section>
+        <section class="info-grid">
+            <div class="info-box">
+                <h3>Initiative personnelle et communautaire</h3>
+                <p><strong>Origine passionnée </strong>: WebSafe-Alert a débuté comme une initiative personnelle passionnée pour améliorer la sécurité en ligne.<br>
+                <br><strong>Ouverture à la communauté </strong>: Bien que démarré individuellement, le projet accueille activement la contribution et les commentaires de la communauté pour évoluer.</p>
+            </div>
+            <div class="info-box">
+                <h3>Développement transparent et ouvert</h3>
+                <p><strong>Processus de développement public </strong>: Le développement de l'extension et des formations se déroule de manière transparente, avec des discussions ouvertes sur GitHub.<br><br>
+                    <strong>Retours des utilisateurs pris en compte </strong>: Les retours et suggestions des utilisateurs sont au cœur des améliorations continues du projet.
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>Objectifs partagés et impact collectif</h3>
+                <p><strong>Objectif communautaire </strong>: Notre objectif est de renforcer ensemble la sécurité en ligne en fournissant des outils accessibles et des ressources éducatives.<br><br>
+                <strong>Impact grandissant </strong>: Grâce à la collaboration communautaire, WebSafe-Alert étend son impact et sa portée pour un Internet plus sûr.</p>
+            </div>
+        </section>   
+        <section class="developer-doc">
+            <h2>Nous suivre !</h2>
+            <button><a class="but" href="https://github.com/WebSafeAlert">S'abonner à notre github</a></button>
+            <br>
+            <br>
+            <button><a class="but" href="https://www.instagram.com/websafealert/">S'abonner à notre instagram</a></button>
+            <br>
+            <br>
+            <button><a class="but" href="https://discord.gg/HHT9NFg83n">Rejoindre notre serveur discord</a></button>
+        </section>     
+        <section class="developer-doc" id="dev">
+            <h2>Vous êtes développeur ?</h2>
+            <p>Consultez notre documentation pour en savoir plus sur nos outils et comment les utiliser.</p>
+            <button onclick="location.href='/docs'">Voir la documentation</button>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 WebSafeAlert. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161b22;
+    color: #333;
+}
+
+header {
+    background-color: #00010d;
+    color: white;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #00010e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff3b3f;
+}
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #00010e;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Afficher le menu quand il est actif */
+nav ul.active {
+    display: flex;
+}
+
+/* Transition pour le menu hamburger */
+.menu-toggle.active::before {
+    content: "\2715"; /* X symbol */
+    animation: rotate 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(45deg, #00010e, #00010d);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.text button {
+    background-color: #ff3b3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.image img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* Styles de base pour la grille */
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Permettre le wrapping sur petits écrans */
+    padding: 20px; /* Ajouter du padding autour de la grille */
+}
+
+.info-box {
+    background-color: #00010d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: white;
+    overflow: hidden; /* Pour gérer le dépassement de texte */
+    margin: 10px 0; /* Marge verticale entre les boîtes sur petits écrans */
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.info-box p {
+    line-height: 1.6;
+}
+
+.info-box:hover {
+    box-shadow: 0 0 20px rgba(255, 59, 63, 0.8); /* Effet de survol amélioré */
+    transform: translateY(-10px); /* Légère animation de survol */
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+/* Media queries pour moyens écrans */
+@media (max-width: 1024px) {
+    .info-box {
+        flex-basis: 48%; /* Deux boîtes par ligne */
+    }
+}
+
+/* Media queries pour très petits écrans */
+@media (max-width: 480px) {
+    .info-box {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 1.2rem; /* Réduire la taille du titre */
+    }
+
+    .info-box p {
+        font-size: 0.9rem; /* Réduire la taille du texte */
+    }
+}
+
+
+footer {
+    background-color: #00010d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.but {
+    background-color: #ff3b3f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.developer-doc {
+    padding: 40px 20px;
+    background-color: #00010d;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer-doc h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.developer-doc p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.developer-doc button {
+    background-color: #ff3b3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.developer-doc button:hover {
+    background-color: #e53935;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    });
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+        });
+    }
+</script>

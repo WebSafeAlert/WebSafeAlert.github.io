@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161b22;
+    color: #333;
+}
+
+header {
+    background-color: #00010d;
+    color: white;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    background-color: #00010e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #B30004;
+}
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #00010e;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Afficher le menu quand il est actif */
+nav ul.active {
+    display: flex;
+}
+
+/* Transition pour le menu hamburger */
+.menu-toggle.active::before {
+    content: "\2715"; /* X symbol */
+    animation: rotate 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(45deg, #00010e, #00010d);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.text button {
+    background-color: #B30004;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.image img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* Styles de base pour la grille */
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Permettre le wrapping sur petits écrans */
+    padding: 20px; /* Ajouter du padding autour de la grille */
+}
+
+.info-box {
+    background-color: #00010d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: white;
+    overflow: hidden; /* Pour gérer le dépassement de texte */
+    margin: 10px 0; /* Marge verticale entre les boîtes sur petits écrans */
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.info-box p {
+    line-height: 1.6;
+}
+
+.info-box:hover {
+    box-shadow: 0 0 20px rgba(255, 59, 63, 0.8); /* Effet de survol amélioré */
+    transform: translateY(-10px); /* Légère animation de survol */
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+/* Media queries pour moyens écrans */
+@media (max-width: 1024px) {
+    .info-box {
+        flex-basis: 48%; /* Deux boîtes par ligne */
+    }
+}
+
+/* Media queries pour très petits écrans */
+@media (max-width: 480px) {
+    .info-box {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    .info-box h3 {
+        font-size: 1.2rem; /* Réduire la taille du titre */
+    }
+
+    .info-box p {
+        font-size: 0.9rem; /* Réduire la taille du texte */
+    }
+}
+
+
+footer {
+    background-color: #00010d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.but {
+    background-color: #B30004;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.developer-doc {
+    padding: 40px 20px;
+    background-color: #00010d;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer-doc h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.developer-doc p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.developer-doc button {
+    background-color: #B30004;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.developer-doc button:hover {
+    background-color: #B30004;
+}

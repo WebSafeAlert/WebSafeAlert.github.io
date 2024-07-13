@@ -1,0 +1,14 @@
+[
+    {
+        "website": "http://1.1.2.3",
+        "reason": "Spamming",
+        "date": "2023-01-15",
+        "by": "admin1"
+    },
+    {
+        "username": "https://moncolis-mondialreley.com",
+        "reason": "Phishing",
+        "date": "2023-02-10",
+        "by": "admin2"
+    }
+]
